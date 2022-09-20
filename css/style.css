@@ -8,64 +8,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
-#firstStoreLocations {
-  position: relative;
-  left: 300px;
-}
 
-#firstStoreLocations h2{
-  font-family: 'Raleway', sans-serif;
-  font-size: 60px;
-  color: aliceblue;
-  color:rgb(163, 241, 241);
-}
-
- #firstStoreLocations ul{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 35px;
-  list-style-type:circle;
-  color:rgb(163, 241, 241);
- }
-
- #secondStoreLocations {
-  position: relative;
-  left: 1200px;
-  bottom: 1375px;
-}
-
-#secondStoreLocations h2{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 60px;
-  color:aliceblue;
-  color:rgb(163, 241, 241);
-}
-
-#secondStoreLocations ul{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 35px;
-  list-style-type:circle;
-  color:rgb(163, 241, 241);
- }
-
- #thirdStoreLocations {
-  position: relative;
-  left: 750px;
-  bottom: 1375px;
-}
-
-#thirdStoreLocations h2{
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 60px;
-  color:aliceblue;
-  color:rgb(163, 241, 241);
-}
-
-#thirdStoreLocations ul{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 35px;
-  list-style-type:circle;
-  color:rgb(163, 241, 241);
- }
 
 #Salmon {
   position: relative;
@@ -75,4 +18,16 @@
 nav {
   text-align: center;
   font-size: 35px;
+}
+
+table, th, td {
+  border: 1px solid;
+  color: aliceblue;
+  width: 1600px;
+ margin-left: 140px;
+ margin-top: 75px;
+}
+/* w3 schools help */
+td:hover {
+  background-color: rgb(53, 19, 146);
 }
