@@ -34,8 +34,6 @@ function header() {
   headElem.appendChild(thElem3);
 }
 
-header();
-
 // CONSTRUCTOR FUNCTION
 function City(name, avg, min, max) {
   this.name = name;
@@ -64,7 +62,7 @@ renderAll();
 City.prototype.render = function () {
   // step 1 - create a new row for this city
   // step 2- create a new td/cell for each hours from 6am to 7pm
-  // step 3- each td set the text content for the td to match whatever that random number 
+  // step 3- each td set the text content for the td to match whatever that random number
   //  append the td to the tr
 
   //  TABLE FROM RENDERING
@@ -105,4 +103,5 @@ function renderAll() {
   }
 }
 
+header();
 renderAll();

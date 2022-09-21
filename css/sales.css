@@ -1,0 +1,68 @@
+ body {
+  background-color: rgba(0, 0, 0, 0.89);
+ }
+ h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+
+
+#Salmon {
+ width: 300px;
+ margin-left: 100px;
+ margin-top: 10px;
+}
+
+nav {
+  text-align: center;
+  font-size: 30px;
+}
+
+table, th, td {
+  border: 1px solid;
+  color: aliceblue;
+  width: 1600px;
+ margin-left: 140px;
+ margin-top: 75px;
+ height: 25px;
+}
+/* w3 schools help */
+td:hover {
+  background-color: rgb(53, 19, 146);
+}
+
+td {
+  text-align: center;
+}
+
+#shirt {
+  margin-right: 150px;
+}
+  
+
+section {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+section p {
+ font-size: 25px;
+ color:white;
+ width: 200px;
+}
+
+button {
+  transition: 1000ms;
+  width:250px;
+  height:50px;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: green;
+}
