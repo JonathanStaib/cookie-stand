@@ -79,6 +79,7 @@ City.prototype.render = function () {
     let th2Elem = document.createElement('td');
     let cookie = this.getCookies();
     this.total += cookie;
+    this.hours.push(cookie);
     th2Elem.textContent = cookie;
     row1.appendChild(th2Elem);
   }
@@ -87,6 +88,54 @@ City.prototype.render = function () {
   thElem3.textContent = this.total;
   row1.appendChild(thElem3);
 };
+
+
+const myForm = document.getElementById('myForm');
+
+function handleSubmit(event){
+  event.preventDefault();
+
+  let name = event.target.name.value;
+  let avg = +event.target.avg.value;
+  let min = +event.target.min.value;
+  let max = +event.target.max.value;
+
+  let newCity = new City(name, avg, min, max);
+  let tfoot = document.getElementById('footerID');
+  console.log(City);
+  newCity.getCookies();
+  newCity.getCust();
+  newCity.render();
+  tfoot.remove();
+  footer();
+  myForm.reset();
+}
+myForm.addEventListener('submit', handleSubmit);
+
+function footer() {
+
+  let footElem = document.createElement('tfoot');
+  footElem.id = 'footerID';
+  tableElem.appendChild(footElem);
+
+  let th1Elem = document.createElement('td');
+  th1Elem.textContent = 'Hourly Totals';
+  footElem.appendChild(th1Elem);
+
+  for (let i = 0; i < hours.length; i++) {
+    let totals = 0;
+    for (let j = 0; j < allCities.length; j++){
+      totals += allCities[j].hours[i];
+    }
+    let th2Elem = document.createElement('td');
+    th2Elem.textContent = totals;
+    footElem.appendChild(th2Elem);
+  }
+
+  let thElem3 = document.createElement('td');
+  thElem3.textContent = 'GrandTotal';
+  footElem.appendChild(thElem3);
+}
 
 new City('Seattle', 6.3, 23, 65);
 new City('Tokyo', 1.2, 3, 24);
@@ -105,3 +154,5 @@ function renderAll() {
 
 header();
 renderAll();
+footer();
+
