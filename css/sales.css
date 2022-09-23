@@ -121,3 +121,15 @@ h5{
   font-size: 30px;
   margin-bottom: 20px;
 }
+
+fieldset {
+  color:white;
+}
+h2, legend {
+  color:white;
+  text-align: center;
+  font-size: 30px;
+}
+h2 {
+  margin-bottom: 10px;
+}

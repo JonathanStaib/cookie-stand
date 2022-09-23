@@ -122,6 +122,8 @@ function footer() {
   th1Elem.textContent = 'Hourly Totals';
   footElem.appendChild(th1Elem);
 
+  let grandTotal = 0;
+
   for (let i = 0; i < hours.length; i++) {
     let totals = 0;
     for (let j = 0; j < allCities.length; j++){
@@ -130,10 +132,12 @@ function footer() {
     let th2Elem = document.createElement('td');
     th2Elem.textContent = totals;
     footElem.appendChild(th2Elem);
+
+    grandTotal += totals;
   }
 
   let thElem3 = document.createElement('td');
-  thElem3.textContent = 'GrandTotal';
+  thElem3.textContent = grandTotal;
   footElem.appendChild(thElem3);
 }
 
