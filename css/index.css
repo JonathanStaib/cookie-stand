@@ -48,15 +48,17 @@ p {
   height: 300px;
   overflow: auto;
   margin-top: 20px;
-  color: white;
+  color: rgb(211, 230, 40);
   margin-left: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 h2 {
   width: 350px;
-  font-size: 30px;
-  color: white;
+  font-size: 28px;
+  color: rgb(211, 230, 40);
   margin-left: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 footer {
@@ -112,4 +114,8 @@ h4{
 h5{
   font-size: 30px;
   margin-bottom: 20px;
+}
+h1 {
+  font-family: 'Yellowtail', cursive;
+  color: lightskyblue;
 }

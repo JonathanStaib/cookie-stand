@@ -1,17 +1,21 @@
- body {
+body {
   background-color: rgba(0, 0, 0, 0.89);
- }
- h1 {
-  color: white;
+}
+h1 {
   font-size: 80px;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }
+  font-family: 'Yellowtail', cursive;
+  color: lightskyblue;
+}
 
 
+h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
 #Salmon {
- width: 300px;
+  width: 300px;
  margin-left: 100px;
  margin-top: 10px;
 }
@@ -21,12 +25,16 @@ nav {
   font-size: 30px;
 }
 
+table {
+  background-color: lightskyblue;
+}
+
 table, th, td {
   border: 1px solid;
-  color: aliceblue;
+  color:black;
   width: 1600px;
- margin-left: 140px;
- margin-top: 75px;
+  margin-left: 140px;
+  margin-top: 75px;
  height: 25px;
 }
 /* w3 schools help */
@@ -41,7 +49,7 @@ td {
 #shirt {
   margin-right: 150px;
 }
-  
+
 
 #ShirtSale {
   display: flex;
@@ -85,10 +93,6 @@ header {
   margin-bottom: 40px;
 }
 
-h3{
-  font-size: 30px;
-  margin-bottom: 20px;
-}
 #Locations {
   text-align: Center;
   color: white;
@@ -130,6 +134,18 @@ h2, legend {
   text-align: center;
   font-size: 30px;
 }
+
 h2 {
+  font-family: 'Yellowtail', cursive;
+  color: lightskyblue;
+  font-size: 40px;
   margin-bottom: 10px;
+}
+#Cities {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+legend {
+  font-family: 'Yellowtail', cursive;
+  color: lightskyblue;
 }
